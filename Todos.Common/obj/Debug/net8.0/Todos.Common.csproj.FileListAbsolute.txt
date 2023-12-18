@@ -1,0 +1,11 @@
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/bin/Debug/net8.0/Todos.Common.deps.json
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/bin/Debug/net8.0/Todos.Common.dll
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/bin/Debug/net8.0/Todos.Common.pdb
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/Todos.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/Todos.Common.AssemblyInfoInputs.cache
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/Todos.Common.AssemblyInfo.cs
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/Todos.Common.csproj.CoreCompileInputs.cache
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/Todos.Common.dll
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/refint/Todos.Common.dll
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/Todos.Common.pdb
+/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/ref/Todos.Common.dll
