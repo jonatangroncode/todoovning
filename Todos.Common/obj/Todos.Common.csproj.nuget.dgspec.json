@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/Todos.Common.csproj": {}
+    "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/Todos.Common.csproj": {}
   },
   "projects": {
-    "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/Todos.Common.csproj": {
+    "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/Todos.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/Todos.Common.csproj",
+        "projectUniqueName": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/Todos.Common.csproj",
         "projectName": "Todos.Common",
-        "projectPath": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/Todos.Common.csproj",
-        "packagesPath": "/Users/jonatangron/.nuget/packages/",
-        "outputPath": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/",
+        "projectPath": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/Todos.Common.csproj",
+        "packagesPath": "/Users/ernestocarocca/.nuget/packages/",
+        "outputPath": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jonatangron/.nuget/NuGet/NuGet.Config"
+          "/Users/ernestocarocca/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/jonatangron/.vscode-dotnet-sdk/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/ernestocarocca/.vscode-dotnet-sdk/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

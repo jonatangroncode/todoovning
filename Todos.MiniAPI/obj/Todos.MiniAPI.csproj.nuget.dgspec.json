@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.MiniAPI/Todos.MiniAPI.csproj": {}
+    "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/Todos.MiniAPI.csproj": {}
   },
   "projects": {
-    "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/Todos.Common.csproj": {
+    "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/Todos.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/Todos.Common.csproj",
+        "projectUniqueName": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/Todos.Common.csproj",
         "projectName": "Todos.Common",
-        "projectPath": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/Todos.Common.csproj",
-        "packagesPath": "/Users/jonatangron/.nuget/packages/",
-        "outputPath": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/",
+        "projectPath": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/Todos.Common.csproj",
+        "packagesPath": "/Users/ernestocarocca/.nuget/packages/",
+        "outputPath": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jonatangron/.nuget/NuGet/NuGet.Config"
+          "/Users/ernestocarocca/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,21 +53,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/jonatangron/.vscode-dotnet-sdk/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/ernestocarocca/.vscode-dotnet-sdk/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Data/Todos.Data.csproj": {
+    "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Data/Todos.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Data/Todos.Data.csproj",
+        "projectUniqueName": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Data/Todos.Data.csproj",
         "projectName": "Todos.Data",
-        "projectPath": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Data/Todos.Data.csproj",
-        "packagesPath": "/Users/jonatangron/.nuget/packages/",
-        "outputPath": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Data/obj/",
+        "projectPath": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Data/Todos.Data.csproj",
+        "packagesPath": "/Users/ernestocarocca/.nuget/packages/",
+        "outputPath": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jonatangron/.nuget/NuGet/NuGet.Config"
+          "/Users/ernestocarocca/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -79,8 +79,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/Todos.Common.csproj": {
-                "projectPath": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/Todos.Common.csproj"
+              "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/Todos.Common.csproj": {
+                "projectPath": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/Todos.Common.csproj"
               }
             }
           }
@@ -98,6 +98,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -126,21 +130,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/jonatangron/.vscode-dotnet-sdk/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/ernestocarocca/.vscode-dotnet-sdk/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.MiniAPI/Todos.MiniAPI.csproj": {
+    "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/Todos.MiniAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.MiniAPI/Todos.MiniAPI.csproj",
+        "projectUniqueName": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/Todos.MiniAPI.csproj",
         "projectName": "Todos.MiniAPI",
-        "projectPath": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.MiniAPI/Todos.MiniAPI.csproj",
-        "packagesPath": "/Users/jonatangron/.nuget/packages/",
-        "outputPath": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.MiniAPI/obj/",
+        "projectPath": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/Todos.MiniAPI.csproj",
+        "packagesPath": "/Users/ernestocarocca/.nuget/packages/",
+        "outputPath": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jonatangron/.nuget/NuGet/NuGet.Config"
+          "/Users/ernestocarocca/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -152,8 +156,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Data/Todos.Data.csproj": {
-                "projectPath": "/Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Data/Todos.Data.csproj"
+              "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Data/Todos.Data.csproj": {
+                "projectPath": "/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Data/Todos.Data.csproj"
               }
             }
           }
@@ -171,6 +175,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -214,7 +222,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/jonatangron/.vscode-dotnet-sdk/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/ernestocarocca/.vscode-dotnet-sdk/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
