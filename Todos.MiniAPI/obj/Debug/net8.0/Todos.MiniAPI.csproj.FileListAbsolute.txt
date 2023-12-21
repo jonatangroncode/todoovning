@@ -319,12 +319,24 @@
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/Todos.MiniAPI.MvcApplicationPartsAssemblyInfo.cs
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/Todos.MiniAPI.MvcApplicationPartsAssemblyInfo.cache
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/Todos.MiniAPI.sourcelink.json
+<<<<<<< HEAD
+=======
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/staticwebassets.build.json
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/staticwebassets.development.json
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/staticwebassets/msbuild.Todos.MiniAPI.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/staticwebassets/msbuild.build.Todos.MiniAPI.props
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Todos.MiniAPI.props
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Todos.MiniAPI.props
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/scopedcss/bundle/Todos.MiniAPI.styles.css
+>>>>>>> 53e0e55 (main)
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/Todos.MiniAPI.csproj.CopyComplete
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/Todos.MiniAPI.dll
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/refint/Todos.MiniAPI.dll
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/Todos.MiniAPI.pdb
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/Todos.MiniAPI.genruntimeconfig.cache
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/ref/Todos.MiniAPI.dll
+<<<<<<< HEAD
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/bin/Debug/net8.0/Microsoft.AspNetCore.JsonPatch.dll
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Razor.Language.dll
@@ -333,3 +345,5 @@
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/Todos.MiniAPI.RazorAssemblyInfo.cache
 /Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.MiniAPI/obj/Debug/net8.0/Todos.MiniAPI.RazorAssemblyInfo.cs
+=======
+>>>>>>> 53e0e55 (main)
