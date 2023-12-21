@@ -33,7 +33,7 @@ app.MapPost("/api/books", async (string title, [FromServices] DataContext contex
     Book book = new Book
     {
         Title = title,
-        PublisherId = 0
+        //  PublisherId = 0
     };
     context.Books.Add(book);
     await context.SaveChangesAsync();
@@ -77,6 +77,17 @@ app.MapDelete("/api/books/{id}", async (int id, [FromServices] DataContext conte
 
     // Returnera en "204 No Content" HTTP-respons för att indikera att boken har tagits bort
     return Results.NoContent();
+});
+
+app.MapPost("/api/publisher", async (string publisherName, [FromServices] DataContext context) =>
+{
+    Publisher newPublisher = new Publisher
+    {
+        Name = publisherName
+    };
+    context.Publishers.Add(newPublisher);
+    await context.SaveChangesAsync();
+    return Results.Created($"/api/publisher/{newPublisher.Id}", newPublisher);
 });
 
 
