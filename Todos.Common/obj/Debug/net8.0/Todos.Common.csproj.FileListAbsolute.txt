@@ -9,3 +9,15 @@
 /Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/refint/Todos.Common.dll
 /Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/Todos.Common.pdb
 /Users/jonatangron/Documents/backendutveckling/TodoTest/Todos.Common/obj/Debug/net8.0/ref/Todos.Common.dll
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/bin/Debug/net8.0/Todos.Common.deps.json
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/bin/Debug/net8.0/Todos.Common.dll
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/bin/Debug/net8.0/Todos.Common.pdb
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/Debug/net8.0/Todos.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/Debug/net8.0/Todos.Common.AssemblyInfoInputs.cache
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/Debug/net8.0/Todos.Common.AssemblyInfo.cs
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/Debug/net8.0/Todos.Common.csproj.CoreCompileInputs.cache
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/Debug/net8.0/Todos.Common.sourcelink.json
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/Debug/net8.0/Todos.Common.dll
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/Debug/net8.0/refint/Todos.Common.dll
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/Debug/net8.0/Todos.Common.pdb
+/Users/ernestocarocca/Desktop/backend c#/todoovning/Todos.Common/obj/Debug/net8.0/ref/Todos.Common.dll
