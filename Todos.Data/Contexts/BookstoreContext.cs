@@ -1,17 +1,39 @@
-namespace Todos.Data.Contexts;
+using Microsoft.EntityFrameworkCore;
 
-public class DataContext : DbContext
+using TodoTasks = Todos.Data.Entities.TodoTasks;
+
+namespace Todos.Data.Contexts
 {
-    public DbSet<Book> Books { get; set; }
-    public DbSet<Author>? Authors { get; set; }
-    public DbSet<Publisher>? Publishers { get; set; }
-    public DbSet<AuthorBook>? AuthorBooks { get; set; }
-
-    public DataContext(DbContextOptions<DataContext> options) : base(options) { }
-
-    protected override void OnModelCreating(ModelBuilder builder)
+    public class TodosDbContext : DbContext
     {
-        base.OnModelCreating(builder);
-        builder.Entity<AuthorBook>().HasKey(tt => new { tt.AuthorId, tt.BookId });
+        public DbSet<User> Users { get; set; }
+        public DbSet<Todo> Todos { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<TodoTasks> Tasks { get; set; }
+
+        public TodosDbContext(DbContextOptions<TodosDbContext> options) : base(options)
+        {
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Todo>()
+                .HasOne(t => t.User)
+                .WithMany(u => u.Todos)
+                .HasForeignKey(t => t.UserId);
+
+            modelBuilder.Entity<Todo>()
+                .HasOne(t => t.Category)
+                .WithMany(c => c.Todos)
+                .HasForeignKey(t => t.CategoryId);
+
+            modelBuilder.Entity<TodoTasks>()
+                .HasOne(t => t.Todo)
+                .WithMany(t => t.Tasks)
+                .HasForeignKey(t => t.TodoId);
+
+            // Add more configurations if needed for your relationships
+        }
     }
+
 }

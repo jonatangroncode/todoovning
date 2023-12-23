@@ -1,0 +1,21 @@
+# Ignore Visual Studio Code
+.vscode/
+
+# Ignore bin and obj directories
+bin/
+obj/
+# Ignore MacOS-specific files
+.DS_Store
+
+# Ignore compilation and build files for .NET projects
+*.dll
+*.exe
+*.pdb
+*.user
+*.suo
+*.cache
+*.log
+bin/
+obj/
+
+.fake
