@@ -19,3 +19,22 @@ bin/
 obj/
 
 .fake
+# Ignore Visual Studio Code
+.vscode/
+
+# Ignore bin and obj directories
+bin/
+obj/
+
+# Ignore SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# Ignore MacOS-specific files
+.DS_Store
+# Ignorera alla filer med filändelsen .pdb
+*.pdb
+
+# Ignorera alla filer som heter Books11Db.db
+Books11Db.db
