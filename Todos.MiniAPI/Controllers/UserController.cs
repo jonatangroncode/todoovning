@@ -70,16 +70,7 @@ namespace Todos.MiniAPI.Controllers
             return Ok(user);
         }
 
-        [HttpDelete("todos/{id}")]
-        public IActionResult DeleteTodo(int id)
-        {
-            // Metodens logik för att ta bort en Todo-post
-            // ...
-
-            return NoContent(); // Till exempel, returnera ett svar efter borttagningen
-        }
-
-    }
+     }
 
 
 }
