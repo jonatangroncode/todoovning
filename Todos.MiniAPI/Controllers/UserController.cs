@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Todos.Data.Contexts;
 using Todos.Data.Entities;
-
 namespace Todos.MiniAPI.Controllers
 {
     [ApiController]
@@ -31,6 +30,34 @@ namespace Todos.MiniAPI.Controllers
 
             return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
         }
+        [HttpPut("todos/{id}")]
+        public IActionResult UpdateTodo(int id, Todo updatedTodo)
+        {
+            if (id != updatedTodo.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(updatedTodo).State = EntityState.Modified;
+
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Todos.Any(t => t.Id == id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
 
         [HttpGet("users/{id}")]
         public IActionResult GetUserById(int id)
@@ -42,6 +69,18 @@ namespace Todos.MiniAPI.Controllers
             }
             return Ok(user);
         }
+
+        [HttpDelete("todos/{id}")]
+        public IActionResult DeleteTodo(int id)
+        {
+            // Metodens logik för att ta bort en Todo-post
+            // ...
+
+            return NoContent(); // Till exempel, returnera ett svar efter borttagningen
+        }
+
     }
+
+
 }
 

@@ -33,3 +33,8 @@ obj/
 
 # Ignore MacOS-specific files
 .DS_Store
+# Ignorera alla filer med filändelsen .pdb
+*.pdb
+
+# Ignorera alla filer som heter Books11Db.db
+Books11Db.db
