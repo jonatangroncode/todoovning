@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-
+using System.Linq;
 using TodoTasks = Todos.Data.Entities.TodoTasks;
 
 namespace Todos.Data.Contexts
@@ -29,7 +29,7 @@ namespace Todos.Data.Contexts
 
             modelBuilder.Entity<TodoTasks>()
                 .HasOne(t => t.Todo)
-                .WithMany(t => t.Tasks)
+                .WithMany(t => t.TodoTasks)
                 .HasForeignKey(t => t.TodoId);
 
             // Add more configurations if needed for your relationships
