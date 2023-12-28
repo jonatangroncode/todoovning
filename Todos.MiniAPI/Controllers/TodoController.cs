@@ -11,7 +11,6 @@ namespace Todos.MiniAPI.Controllers
     public class TodoController : ControllerBase
     {
         private readonly TodosDbContext _context;
-<<
         public TodoController(TodosDbContext context)
         {
             _context = context;
