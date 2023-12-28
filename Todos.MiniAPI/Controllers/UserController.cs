@@ -38,35 +38,35 @@ namespace Todos.MiniAPI.Controllers
         [HttpPut("todos/{id}")]
         public IActionResult UpdateTodo(int id, string name)
         {
-            User updatedUser = _context.Users.FirstOrDefault(u => u.Id == id);
-            if (id != updatedUser.Id)
+            User updatedUser = _context.Users.Find(id);
+            if (id == updatedUser.Id)
             {
-                return BadRequest();
-            }
-            updatedUser.Name = name;
-
-            _context.Entry(updatedUser).State = EntityState.Modified;
+                updatedUser.Name = name;
+                // notise updatedUser as modified in the context.
+                _context.Entry(updatedUser).State = EntityState.Modified;
 
 
-            try
-            {
-
-
-                _context.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!_context.Todos.Any(t => t.Id == id))
+                try
                 {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
 
-            return NoContent();
+
+                    _context.SaveChanges();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!_context.Todos.Any(t => t.Id == id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+
+                return NoContent();
+            }
+            return BadRequest();
         }
         //get user by id
         [HttpGet("users/{id}")]
