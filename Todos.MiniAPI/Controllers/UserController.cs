@@ -11,7 +11,7 @@ namespace Todos.MiniAPI.Controllers
         {
             _context = context;
         }
-
+        // post create a new user
         [HttpPost("users")]
         public IActionResult CreateUser(string name)
         {
@@ -24,7 +24,7 @@ namespace Todos.MiniAPI.Controllers
             if (existingUser != null)
             {
                 ModelState.AddModelError("Name", "A user with this name already exists.");
-                return Conflict(ModelState); // Returnerar HTTP statuskod 409 (Conflict)
+                return Conflict(ModelState); // Returns HTTP  409 (Conflict)
             }
 
             var newUser = new User { Name = name };
@@ -34,6 +34,7 @@ namespace Todos.MiniAPI.Controllers
 
             return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
         }
+        // put use user id to get todos and changes name
         [HttpPut("todos/{id}")]
         public IActionResult UpdateTodo(int id, string name)
         {
@@ -67,7 +68,7 @@ namespace Todos.MiniAPI.Controllers
 
             return NoContent();
         }
-
+        //get user by id
         [HttpGet("users/{id}")]
         public IActionResult GetUserById(int id)
         {
@@ -78,6 +79,7 @@ namespace Todos.MiniAPI.Controllers
             }
             return Ok(user);
         }
+        // delete user with using id
         [HttpDelete("users/{id}")]
         public IActionResult DeleteUser(int id)
         {
@@ -92,9 +94,6 @@ namespace Todos.MiniAPI.Controllers
 
             return NoContent();
         }
-
     }
-
-
 }
 
