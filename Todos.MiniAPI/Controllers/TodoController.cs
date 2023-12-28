@@ -11,7 +11,7 @@ namespace Todos.MiniAPI.Controllers
             _context = context;
 
         }
-
+        // post with user 
         [HttpPost("todos")]
         public IActionResult CreateTodo(string title, int userId, int id)
         {
@@ -21,8 +21,6 @@ namespace Todos.MiniAPI.Controllers
                 Title = title,
                 UserId = userId,
                 Id = id
-
-
             };
 
             if (string.IsNullOrWhiteSpace(title))
@@ -39,14 +37,14 @@ namespace Todos.MiniAPI.Controllers
         [HttpGet("getTodos")]
         public IActionResult GetAllTodos()
         {
-            var todos = _context.Todos.ToList(); // Hämta alla todos från databasen
+            var todos = _context.Todos.ToList();
 
             if (todos == null || todos.Count == 0)
             {
-                return NotFound(); // Returnera 404 Not Found om det inte finns några todos
+                return NotFound();
             }
 
-            return Ok(todos); // Returnera alla todos om de finns
+            return Ok(todos); //Returns all Todos
         }
 
 
@@ -54,11 +52,11 @@ namespace Todos.MiniAPI.Controllers
         [HttpPut("todos/{id}")]
         public IActionResult UpdateTodo(int id, string title, int userId)
         {
-            var existingTodo = _context.Todos.FirstOrDefault(t => t.Id == id);
+            var existingTodo = _context.Todos.FirstOrDefault(t => t.Id == id);// Get the first object with a matching 'Id'
 
             if (existingTodo == null)
             {
-                return NotFound(); // Returnera 404 Not Found om det inte finns någon todo med det angivna ID:t
+                return NotFound(); // Returns 404
             }
 
             if (string.IsNullOrWhiteSpace(title))
@@ -73,27 +71,26 @@ namespace Todos.MiniAPI.Controllers
             _context.Todos.Update(existingTodo);
             _context.SaveChanges();
 
-            return Ok(existingTodo); // Returnera den uppdaterade todo
+            return Ok(existingTodo); // Returns updated todo
         }
         [HttpDelete("todos/{id}")]
         public IActionResult DeleteTodo(int id)
         {
-            var todoToDelete = _context.Todos.FirstOrDefault(t => t.Id == id);
+            var todoToDelete = _context.Todos.Find(id);
 
             if (todoToDelete == null)
             {
-                return NotFound(); // Returnera 404 Not Found om det inte finns någon todo med det angivna ID:t
+                return NotFound();
             }
 
             _context.Todos.Remove(todoToDelete);
             _context.SaveChanges();
 
-            return NoContent(); // Returnera 204 No Content efter att ha tagit bort todo
+            return NoContent();
+
+
         }
-
-
+        }
     }
-}
-
 
 

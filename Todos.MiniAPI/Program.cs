@@ -25,7 +25,7 @@ if (app.Environment.IsDevelopment())
         c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Your API V1");
-        // c.RoutePrefix = string.Empty; // Om du vill öppna Swagger UI på rotvägen
+
     }
     );
 }
@@ -35,7 +35,7 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
-//app.UseAuthorization();
+
 
 // Map controllers
 app.MapControllers();
