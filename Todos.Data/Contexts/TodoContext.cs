@@ -1,6 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using TodoTasks = Todos.Data.Entities.TodoTasks;
+
 
 namespace Todos.Data.Contexts
 {

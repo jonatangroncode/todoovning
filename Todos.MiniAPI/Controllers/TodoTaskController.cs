@@ -1,9 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using Todos.Data.Contexts;
-using Todos.Data.Entities;
-using Microsoft.EntityFrameworkCore;
-using System.Linq;
-
 namespace Todos.MiniAPI.Controllers
 {
     [ApiController]
@@ -43,6 +37,7 @@ namespace Todos.MiniAPI.Controllers
         public IActionResult GetAllTodoTasks()
         {
             var todoTasks = _context.Tasks.ToList();
+
 
             if (todoTasks == null || todoTasks.Count == 0)
             {
@@ -86,6 +81,7 @@ namespace Todos.MiniAPI.Controllers
 
             return NoContent();
         }
+
 
 
     }
