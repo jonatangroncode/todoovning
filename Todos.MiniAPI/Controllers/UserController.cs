@@ -37,17 +37,22 @@ namespace Todos.MiniAPI.Controllers
             return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
         }
         [HttpPut("todos/{id}")]
-        public IActionResult UpdateTodo(int id, Todo updatedTodo)
+        public IActionResult UpdateTodo(int id, string name)
         {
-            if (id != updatedTodo.Id)
+            User updatedUser = _context.Users.FirstOrDefault(u => u.Id == id);
+            if (id != updatedUser.Id)
             {
                 return BadRequest();
             }
+            updatedUser.Name = name;
 
-            _context.Entry(updatedTodo).State = EntityState.Modified;
+            _context.Entry(updatedUser).State = EntityState.Modified;
+
 
             try
             {
+
+
                 _context.SaveChanges();
             }
             catch (DbUpdateConcurrencyException)
