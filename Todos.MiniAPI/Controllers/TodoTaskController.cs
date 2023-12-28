@@ -38,6 +38,7 @@ namespace Todos.MiniAPI.Controllers
         {
             var todoTasks = _context.Tasks.ToList();
 
+
             if (todoTasks == null || todoTasks.Count == 0)
             {
                 return NotFound();
@@ -45,5 +46,45 @@ namespace Todos.MiniAPI.Controllers
 
             return Ok(todoTasks);
         }
+
+        [HttpPut("updateTodoTask/{id}")]
+        public IActionResult UpdateTodoTask(int id, string description, string category)
+        {
+            var existingTodoTask = _context.Tasks.Find(id);
+
+            if (existingTodoTask == null)
+            {
+                return NotFound();
+            }
+
+            // Update properties of the existingTodoTask with values from the query parameters
+            existingTodoTask.Description = description;
+            existingTodoTask.Category = category;
+
+            _context.SaveChanges();
+
+            return NoContent();
+        }
+
+        [HttpDelete("deleteTodoTask/{id}")]
+        public IActionResult DeleteTodoTask(int id)
+        {
+            var todoTask = _context.Tasks.Find(id);
+
+            if (todoTask == null)
+            {
+                return NotFound();
+            }
+
+            _context.Tasks.Remove(todoTask);
+            _context.SaveChanges();
+
+            return NoContent();
+        }
+
+
+
     }
+
+
 }
