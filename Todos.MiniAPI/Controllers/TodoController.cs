@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Todos.Data.Contexts;
 using Todos.Data.Entities;
-using Todos.Data;
-using System.Collections.Generic;
+
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 namespace Todos.MiniAPI.Controllers
@@ -12,12 +11,12 @@ namespace Todos.MiniAPI.Controllers
     public class TodoController : ControllerBase
     {
         private readonly TodosDbContext _context;
+<<
         public TodoController(TodosDbContext context)
         {
             _context = context;
 
         }
-
 
         [HttpPost("todos")]
         public IActionResult CreateTodo(string title, int userId, int id)
@@ -55,6 +54,7 @@ namespace Todos.MiniAPI.Controllers
 
             return Ok(todos); // Returnera alla todos om de finns
         }
+
 
 
         [HttpPut("todos/{id}")]
