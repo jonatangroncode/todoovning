@@ -1,6 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
-using Todos.Data.Contexts;
-using Todos.Data.Entities;
+
 namespace Todos.MiniAPI.Controllers
 {
     [ApiController]
