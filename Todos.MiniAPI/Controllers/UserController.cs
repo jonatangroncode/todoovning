@@ -22,6 +22,12 @@ namespace Todos.MiniAPI.Controllers
                 ModelState.AddModelError("Name", "The Name field is required.");
                 return BadRequest(ModelState);
             }
+            var existingUser = _context.Users.FirstOrDefault(u => u.Name == name);
+            if (existingUser != null)
+            {
+                ModelState.AddModelError("Name", "A user with this name already exists.");
+                return Conflict(ModelState); // Returnerar HTTP statuskod 409 (Conflict)
+            }
 
             var newUser = new User { Name = name };
 
@@ -69,8 +75,22 @@ namespace Todos.MiniAPI.Controllers
             }
             return Ok(user);
         }
+        [HttpDelete("users/{id}")]
+        public IActionResult DeleteUser(int id)
+        {
+            var user = _context.Users.Find(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
 
-     }
+            _context.Users.Remove(user);
+            _context.SaveChanges();
+
+            return NoContent();
+        }
+
+    }
 
 
 }
