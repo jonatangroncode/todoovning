@@ -11,7 +11,7 @@ namespace Todos.MiniAPI.Controllers
             _context = context;
 
         }
-        // post with user 
+        // Crate a new todo Object
         [HttpPost("todos")]
         public IActionResult CreateTodo(string title, int userId, int id)
         {
@@ -22,18 +22,19 @@ namespace Todos.MiniAPI.Controllers
                 UserId = userId,
                 Id = id
             };
-
+            //Validates the 'title' field and returns a BadRequest response if it's empty.
             if (string.IsNullOrWhiteSpace(title))
             {
                 ModelState.AddModelError("Name", "The Name field is required.");
                 return BadRequest(ModelState);
             }
+            //Adds the new Todo to the database and saves changes.
             _context.Todos.Add(newTodo);
             _context.SaveChanges();
-
+            //Returns a response with the created Todo object.
             return CreatedAtAction(nameof(GetAllTodos), new { id = newTodo.UserId }, newTodo);
         }
-
+        //Gets all existing todos.
         [HttpGet("getTodos")]
         public IActionResult GetAllTodos()
         {
@@ -90,7 +91,7 @@ namespace Todos.MiniAPI.Controllers
 
 
         }
-        }
     }
+}
 
 

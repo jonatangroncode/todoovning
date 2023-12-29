@@ -28,7 +28,7 @@ namespace Todos.MiniAPI.Controllers
             }
 
             var newUser = new User { Name = name };
-
+            //   Entity Framework Core  funktions  Add(entity,Remove(entity),Find(key),FirstOrDefault(predicate),ToList(),Count(),Any(predicate)
             _context.Users.Add(newUser);
             _context.SaveChanges();
 
@@ -44,8 +44,6 @@ namespace Todos.MiniAPI.Controllers
                 updatedUser.Name = name;
                 // notise updatedUser as modified in the context.
                 _context.Entry(updatedUser).State = EntityState.Modified;
-
-
                 try
                 {
 
@@ -79,6 +77,20 @@ namespace Todos.MiniAPI.Controllers
             }
             return Ok(user);
         }
+        //getAll user 
+        [HttpGet("getAllUsers")]
+        public IActionResult GetAllUsers()
+        {
+            var users = _context.Users.ToList();
+
+            if (users == null || users.Count == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(users); //Return all users
+        }
+
         // delete user with using id
         [HttpDelete("users/{id}")]
         public IActionResult DeleteUser(int id)
